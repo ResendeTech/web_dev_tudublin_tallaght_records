@@ -1,24 +1,3 @@
-#exercise_choice = int(input("Which exercise do you want to choose? "))
-
-
-# if exercise_choice in range(7):
-#     if exercise_choice == 1:
-    
-#     elif exercise_choice == 2:
-
-#     elif exercise_choice == 3:
-
-#     elif exercise_choice == 4:
-
-#     elif exercise_choice == 5:
-    
-#     elif exercise_choice == 6:
-
-#     elif exercise_choice == 7:
-
-
-
-
 def ex_1():
     print("="*25, "Exercise 1", "="*25)
 
