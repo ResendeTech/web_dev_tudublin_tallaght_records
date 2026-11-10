@@ -23,12 +23,12 @@ paid_no_commission = 0
 # commision rate is calculated here
 if value_of_treats < 20:
     commision_rate = value_of_treats * (COMMISION_RATE_1 / 100)
+    paid_no_commission += 1
 elif value_of_treats >= 20 and value_of_treats <= 50:
     commision_rate = value_of_treats * (COMMISION_RATE_2 / 100)
-    paid_no_commission += 1
 else:
     commision_rate = value_of_treats * (COMMISION_RATE_3 / 100)
-    paid_no_commission += 1
+    
 
 # Gross pay, tax_pay and net pay is calculated
 gross_pay = WEEKLY_WAGE + commision_rate
@@ -43,10 +43,10 @@ print("\n\n")
 
 # exercise b
 # Using indeces for the letters
-if 'PTLT' in employee_number[0:4]:
-    print(f"Employee number contains {COMPANY_TEAM_SIZE} in the first 4 characters")
+if COMPANY_TEXT in employee_number[0:4]:
+    print(f"Employee number contains '{COMPANY_TEXT}' in the first 4 characters")
 else:
-    print(f"Warning: The characters {COMPANY_TEAM_SIZE} are not located correctly in the employee number")
+    print(f"Warning: The characters '{COMPANY_TEXT}' are not located correctly in the employee number")
 print("\n\n")
 
 
