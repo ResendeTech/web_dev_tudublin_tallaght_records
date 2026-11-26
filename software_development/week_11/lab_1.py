@@ -66,7 +66,6 @@ while True:
         sentence = ""
         if striker_details['striker_1']['goals'] == striker_details['striker_2']['goals']:
             random_n = random.randint(1, 2)
-            print("---Promotional Function Selection---")
             sentence = f"{striker_details[f'striker_{random_n}']['name']} has been randomly selected."
 
         elif striker_details['striker_1']['goals'] > striker_details['striker_2']['goals']:
@@ -75,10 +74,10 @@ while True:
         else:
             sentence = f"{striker_details[f'striker_2']['name']} has been selected."
 
-        if sentence is not "":
+        if sentence != "":
             print("---Promotional Function Selection---")
-        print(sentence)
-        print("\n")
+            print(sentence)
+            print("\n")
 
     if int(choice) == 3:
         print("Program ending. Goodbye!")
